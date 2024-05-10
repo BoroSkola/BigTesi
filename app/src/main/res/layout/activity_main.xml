@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="Üdvözlet testvérem az Úrban!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/loginViewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="30"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:layout_constraintVertical_bias="0.308"
+        tools:layout_editor_absoluteX="0dp"
+        android:onClick="loginView"/>
+
+    <Button
+        android:id="@+id/registerViewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="30"
+        android:text="@string/registerEmail"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginViewButton"
+        app:layout_constraintVertical_bias="0.1"
+        tools:layout_editor_absoluteX="14dp"
+        android:onClick="registerView"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/naploId"
+        tools:context=".fragments.NaploFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <EditText
+                android:id="@+id/workoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:text="Gyakorlat neve: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/workoutName"
+                android:enabled="false"
+                android:text="Súly: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/workoutSets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_below="@id/weight"
+                android:enabled="false"
+                android:text="Kör: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/workoutReps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_below="@id/workoutSets"
+                android:enabled="false"
+                android:text="Ismétlés:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/workoutTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/workoutReps"
+                android:inputType="text"
+                android:enabled="false"
+                android:text="Ismétlés időtartama: "
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/editNaploItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workoutTime"
+                android:layout_alignParentStart="true"
+                android:text="Szerkesztés"
+                />
+
+            <Button
+                android:id="@+id/deleteNaploItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workoutTime"
+                android:layout_alignParentEnd="true"
+                android:text="Törlés"
+                android:onClick="deleteConfirm"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
